@@ -59,7 +59,13 @@ represent the upstream platform context. This repository focuses on the dbt
 layer: it declares the Bronze tables as sources, builds incremental Silver
 models, and publishes dashboard and AI marts.
 
+## lakeflow Jobs 
+Contains both notebook code with lakeflow declarative pipeline
+<img width="1892" height="802" alt="Screenshot 2026-10-23 163816" src="https://github.com/user-attachments/assets/0044f5e5-9348-464f-bb39-667144b806ca" />
+
 ## Bronze layer
+Here is the spark LakeFlow declarative pipeline
+<img width="1005" height="592" alt="image" src="https://github.com/user-attachments/assets/c67733fe-10c5-4f88-be85-f0f6da595c60" />
 
 Bronze tables are declared in
 [`models/staging/source.yml`](dbt_business_models/models/staging/source.yml)
@@ -128,16 +134,8 @@ dbt_business_models/
 The `users_track` snapshot preserves historical user changes in the Silver
 schema using `user_id` and `updated_at`.
 
-## Running the dbt project
-
-Run dbt commands from the `dbt_business_models` directory after configuring
-the `dbt_business_models` profile:
-
-```bash
-dbt debug
-dbt run
-dbt test
-```
+### Dbt Data model
+<img width="799" height="576" alt="dbt_dag_crop" src="https://github.com/user-attachments/assets/f20f361a-41b8-4525-b144-f63ff3bc6b7c" />
 
 The generated Gold and AI tables are intended for dashboards, analytics, and
 downstream machine-learning workflows.
