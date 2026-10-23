@@ -1,0 +1,17 @@
+version: 2 
+sources:
+  - name: bronze
+    description: "This is the bronze layer which contains raw data ingested from various sources."
+    tables:
+      - name: bronze_users
+        description: "This table contains raw user data ingested from the source system."
+      - name: bronze_content
+        description: "This table contains raw content data ingested from the source system."
+      - name: bronze_ratings
+        description: "This table contains raw ratings data ingested from the source system."
+      - name: bronze_subscriptions
+        description: "This table contains raw subscription data ingested from the source system."
+      - name: bronze_watch_events
+        description: "This table contains raw watch events data ingested from the source system."
+
+

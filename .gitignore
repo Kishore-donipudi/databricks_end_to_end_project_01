@@ -1,0 +1,11 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+dbt_business_models/target/
+dbt_business_models/logs/
+# Virtual environments
+.venv
